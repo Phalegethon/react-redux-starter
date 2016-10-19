@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, IndexLink} from 'react-router';
+import { Link, IndexLink } from 'react-router';
 import LoadingDots from './LoadingDots';
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
       <Link to="/courses" activeClassName="active">
         Courses
       </Link>
-      <LoadingDots interval={100} dots={20}/>
+      <LoadingDots interval={100} dots={20} />
     </nav>
   );
 };

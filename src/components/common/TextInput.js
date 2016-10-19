@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 
 const TextInput = ({
   name,
@@ -24,7 +24,7 @@ const TextInput = ({
           className="form-control"
           placeholder={placeholder}
           value={value}
-          onChange={onChange}/> {error && <div className="alert alert-danger">{error}</div>}
+          onChange={onChange} /> {error && <div className="alert alert-danger">{error}</div>}
       </div>
     </div>
   );

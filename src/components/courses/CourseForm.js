@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
 
@@ -18,7 +18,7 @@ const CourseForm = ({
         label="Title"
         value={course.title}
         onChange={onChange}
-        error={errors.title}/>
+        error={errors.title} />
 
       <SelectInput
         name="authorId"
@@ -27,30 +27,30 @@ const CourseForm = ({
         defaultOption="Select Author"
         options={allAuthors}
         onChange={onChange}
-        error={errors.authorId}/>
+        error={errors.authorId} />
 
       <TextInput
         name="category"
         label="Category"
         value={course.category}
         onChange={onChange}
-        error={errors.category}/>
+        error={errors.category} />
 
       <TextInput
         name="length"
         label="Length"
         value={course.length}
         onChange={onChange}
-        error={errors.length}/>
+        error={errors.length} />
 
       <input
         type="submit"
         disabled={loading}
         value={loading
-        ? 'Saving...'
-        : 'Save'}
+          ? 'Saving...'
+          : 'Save'}
         className="btn btn-primary"
-        onClick={onSave}/>
+        onClick={onSave} />
     </form>
   );
 };
