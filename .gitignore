@@ -35,4 +35,5 @@ dist
 # Mac files
 .DS_Store
 
+# additional plugins
 .history
