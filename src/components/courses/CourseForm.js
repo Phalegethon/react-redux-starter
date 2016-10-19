@@ -37,11 +37,11 @@ const CourseForm = ({
         error={errors.category}/>
 
       <TextInput
-        name="lenght"
-        label="Lenght"
-        value={course.lenght}
+        name="length"
+        label="Length"
+        value={course.length}
         onChange={onChange}
-        error={errors.lenght}/>
+        error={errors.length}/>
 
       <input
         type="submit"
