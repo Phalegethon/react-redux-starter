@@ -6,7 +6,7 @@
 .*/flow-typed/.*
 
 [include]
-src/.*
+//src/.* // enable this for flow
 
 [libs]
 ./flow-typed

@@ -37,12 +37,12 @@ export function loadCourses() {
 export function saveCourse(course) {
   return function (dispatch, getState) {
     dispatch(beginAjaxCall());
-    return courseApi.saveCourse(course).then(courses => {
-      course.id
-        ? dispatch(updateCourseSuccess(course))
-        : dispatch(createCourseSuccess(course));
-    }).catch(error => {
-      throw (error);
-    });
+    return courseApi.saveCourse(course)
+      .then(courses => {
+        return course.id ? dispatch(updateCourseSuccess(course)) : dispatch(createCourseSuccess(course));
+      })
+      .catch(error => {
+        throw (error);
+      });
   };
 }
